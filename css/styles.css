@@ -1,0 +1,175 @@
+body {
+  font-family: "Roboto"sans-serif;
+  background: linear-gradient(to bottom right, #DD2476, #FF512F)
+}
+
+div.trans-bg {
+  background-color:rgba(34,34,51,0.2);
+}
+
+div.trans-bg2 {
+  background-color:rgba(34,34,51,0.5);
+}
+
+.item-center {
+  display: block;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.text-block {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.item {
+    background: rgba(0,0,0,.2);
+    margin: 3rem;
+    font-size: 2rem;
+    padding: 0 10px 10px;
+    height: 100%;
+}
+
+h1.item-title {
+  padding-top: 10px;
+  font-size: 4rem;
+  color: #FF944D;
+}
+
+.item h2 {
+  padding-top: 10px;
+  font-size: 3rem;
+  color: #FF944D;
+}
+
+.item p {
+  color: #D4BFC3
+}
+
+.parallax2 {
+    background-image: url("../pic/para2.png");
+    height: 95vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    background-image: url("../pic/para1.jpg");
+    height: 95vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paralax-text {
+  text-align: right;
+  font-size: 2rem;
+  color: #D4BFC3
+}
+
+.paralax-text span {
+  background-color: rgba(0,0,0,0.7);
+  padding: 0px 10px
+}
+
+.paralax-text small {
+  color: #D4BFC1;
+  font-size: 12px;
+}
+
+.img-pad {
+  padding: 4rem
+}
+
+.nav-size {
+  position: fixed;
+  width: 100%;
+}
+
+/* sizing for text parts */
+#onescreen {
+  height: 90vh;
+}
+
+#albumscreen {
+  height: auto;
+}
+
+/* The Margin need to be more responsive */
+.auto-margin {
+  margin: 10rem 3rem 5rem;
+}
+
+/* Video Content */
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+/*Navbar Styling*/
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background-color: rgba(34,34,51,0.1);  /*Sets the text hover color on navbar*/
+  color: black;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+   /*BACKGROUND color for active*/
+   background-color: rgba(34,34,51,0.2);
+   color: black;
+}
+
+.navbar-header .navbar-brand {
+  color: black;
+}
+
+  .navbar-default {
+    background-color: rgba(34,34,51,0.4);
+    border: 0;
+}
+
+ .nav > li > a:hover,
+ .nav > li > a:focus {
+    text-decoration: none;
+    background-color: black; /*Change rollover cell color here*/
+  }
+
+
+  .navbar-default .navbar-nav > li > a {
+   color: black; /*Change active text color here*/
+    }
